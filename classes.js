@@ -171,7 +171,7 @@ class Machine {
     return function() {
       this.wear_and_tear_count -= 10;
       this.needs_reboot = false;
-    }
+    }.bind(this)
   }
 }
 
